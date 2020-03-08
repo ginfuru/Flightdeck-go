@@ -7,7 +7,8 @@
     "start": "hugo serve --buildDrafts --buildFuture --environment development",
     "build": "hugo --gc --minify --environment production",
     "build:preview": " hugo --gc --environement production",
-    "images": "gulp images"
+    "images": "gulp images",
+    "deploy": "echo 'Well boys, I think I hooked it a little to hard to the right. WIP'"
   },
   "repository": {
     "type": "git",
