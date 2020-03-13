@@ -9,8 +9,8 @@
 <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
 <link href="/site.webmanifest" rel="manifest">
 
-{{ with .Description }}
+{{- with .Description -}}
   <meta name="description" content="{{ . }}"/>
-{{ end }}
+{{- end -}}
 
-{{ hugo.Generator }}
+{{- hugo.Generator -}}
