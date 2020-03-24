@@ -9,4 +9,5 @@
     "/public/**": true,
     "/resources/_gen/": true
   },
+  "extensions.showRecommendationsOnlyOnDemand": true
 }
