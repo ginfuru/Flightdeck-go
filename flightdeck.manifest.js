@@ -1,6 +1,9 @@
 module.exports = {
   tasks: {
+    eslint: true,
     imagemin: true,
+    svg: true,
+    watch: true,
     deploy: false,
   },
 
@@ -36,10 +39,23 @@ module.exports = {
   },
 
   imagemin: {
-    src: "images",
+    src: "_images",
     dest: "images",
-    progressive: true,
-    svgoPlugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+    interlaced: false,
+    mozjpeg: [
+      {
+        quality: 75,
+        progressive: true,
+      },
+    ],
+    optimizationLevel: 5,
+    //svgoPlugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+  },
+
+  svgSprite: {
+    src: "_images/svg",
+    dest: "images/svg",
+    filename: "_all-icons.svg",
   },
 
   // js: {
