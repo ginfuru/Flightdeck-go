@@ -1,4 +1,6 @@
 // @ts-nocheck
+/* eslint-disable */
+
 module.exports = {
   plugins: [
     require('autoprefixer')({
@@ -6,6 +8,6 @@ module.exports = {
     }),
     require('@fullhuman/postcss-purgecss')({
       content: ['./layouts/**/*.html'],
-    })
-  ]
-}
+    }),
+  ],
+};
